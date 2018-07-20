@@ -1,0 +1,31 @@
+header {
+    height: 100px;
+    min-width: 100%;
+}
+
+
+.cardStacks {
+    width: 100px;
+    height: 140px;
+    border: solid black
+}
+
+#deckRemainder {
+
+}
+
+#diamondStack {
+
+}
+
+#spadeStack {
+
+}
+
+#clubStack {
+
+}
+
+#heartStack {
+
+}
