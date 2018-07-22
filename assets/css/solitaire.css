@@ -3,6 +3,16 @@ header {
     min-width: 100%;
 }
 
+#gameStart {
+    /* vertical-align: middle; */
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    border: solid black;
+    background-color: lightgrey;
+
+}
+
 
 .cardStacks {
     width: 100px;
@@ -11,21 +21,60 @@ header {
 }
 
 #deckRemainder {
+    
 
 }
 
 #diamondStack {
+    margin-left: 0px;
+    margin-right: 40px;
 
 }
 
 #spadeStack {
+    margin-left: 40px;
+    margin-right: 60px;
+
+}
+#heartStack {
+    margin-left: 80px;
+    margin-right: 60px;;
 
 }
 
 #clubStack {
+    margin-left: 120px;
+    margin-right: 40px;;
 
 }
 
-#heartStack {
 
+
+#stackOne {
+    margin-left: 0px;
+    margin-right: 5px;
+}
+#stackTwo {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#stackThree {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#stackFour {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#stackFive {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#stackSix {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#stackSeven {
+    margin-left: 5px;
+    margin-right: 5px;
 }
