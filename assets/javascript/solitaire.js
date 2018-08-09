@@ -1,15 +1,228 @@
 
 
-var cardDeck = [
-    "Ace Hearts", "Two Hearts", "Three Hearts", "Four Hearts", "Five Hearts", "Six Hearts", "Seven Hearts", "Eight Hearts", "Nine Hearts", "Ten Hearts", "Jack Hearts", "Queen Hearts", "King Hearts",
-    "Ace Clubs", "Two Clubs", "Three Clubs", "Four Clubs", "Five Clubs", "Six Clubs", "Seven Clubs", "Eight Clubs", "Nine Clubs", "Ten Clubs", "Jack Clubs", "Queen Clubs", "King Clubs",
-    "Ace Diamonds", "Two Diamonds", "Three Diamonds", "Four Diamonds", "Five Diamonds", "Six Diamonds", "Seven Diamonds", "Eight Diamonds", "Nine Diamonds", "Ten Diamonds", "Jack Diamonds", "Queen Diamonds", "King Diamonds",
-    "Ace Spades", "Two Spades", "Three Spades", "Four Spades", "Five Spades", "Six Spades", "Seven Spades", "Eight Spades", "Nine Spades", "Ten Spades", "Jack Spades", "Queen Spades", "King Spades",
-];
+var cardDeck = {
+    aceHearts: {
+        value: "",
+        image: "",
+    },
+    twoHearts: {
+        value: "",
+        image: "",
+    },
+    threeHearts: {
+        value: "",
+        image: "",
+    },
+    fourHearts: {
+        value: "",
+        image: "",
+    },
+    fiveHearts: {
+        value: "",
+        image: "",
+    },
+    sixHearts: {
+        value: "",
+        image: "",
+    },
+    sevenHearts: {
+        value: "",
+        image: "",
+    },
+    eightHearts: {
+        value: "",
+        image: "",
+    },
+    nineHearts: {
+        value: "",
+        image: "",
+    },
+    tenHearts: {
+        value: "",
+        image: "",
+    },
+    jackHearts: {
+        value: "",
+        image: "",
+    },
+    queenHearts: {
+        value: "",
+        image: "",
+    },
+    kingHearts: {
+        value: "",
+        image: "",
+    },
+    aceClubs: {
+        value: "",
+        image: "",
+    },
+    twoClubs: {
+        value: "",
+        image: "",
+    },
+    threeClubs: {
+        value: "",
+        image: "",
+    },
+    fourClubs: {
+        value: "",
+        image: "",
+    },
+    fiveClubs: {
+        value: "",
+        image: "",
+    },
+    sixClubs: {
+        value: "",
+        image: "",
+    },
+    sevenClubs: {
+        value: "",
+        image: "",
+    },
+    eightClubs: {
+        value: "",
+        image: "",
+    },
+    nineClubs: {
+        value: "",
+        image: "",
+    },
+    tenClubs: {
+        value: "",
+        image: "",
+    },
+    jackClubs: {
+        value: "",
+        image: "",
+    },
+    queenClubs: {
+        value: "",
+        image: "",
+    },
+    kingClubs: {
+        value: "",
+        image: "",
+    },
+    aceDiamonds: {
+        value: "",
+        image: "",
+    },
+    twoDiamonds: {
+        value: "",
+        image: "",
+    },
+    threeDiamonds: {
+        value: "",
+        image: "",
+    },
+    fourDiamonds: {
+        value: "",
+        image: "",
+    },
+    fiveDiamonds: {
+        value: "",
+        image: "",
+    },
+    sixDiamonds: {
+        value: "",
+        image: "",
+    },
+    sevenDiamonds: {
+        value: "",
+        image: "",
+    },
+    eightDiamonds: {
+        value: "",
+        image: "",
+    },
+    nineDiamonds: {
+        value: "",
+        image: "",
+    },
+    tenDiamonds: {
+        value: "",
+        image: "",
+    },
+    jackDiamonds: {
+        value: "",
+        image: "",
+    },
+    queenDiamonds: {
+        value: "",
+        image: "",
+    },
+    kingDiamonds: {
+        value: "",
+        image: "",
+    },
+    aceSpades: {
+        value: "",
+        image: "",
+    },
+    twoSpades: {
+        value: "",
+        image: "",
+    },
+    threeSpades: {
+        value: "",
+        image: "",
+    },
+    fourSpades: {
+        value: "",
+        image: "",
+    },
+    fiveSpades: {
+        value: "",
+        image: "",
+    },
+    sixSpades: {
+        value: "",
+        image: "",
+    },
+    sevenSpades: {
+        value: "",
+        image: "",
+    },
+    eightSpades: {
+        value: "",
+        image: "",
+    },
+    nineSpades: {
+        value: "",
+        image: "",
+    },
+    tenSpades: {
+        value: "",
+        image: "",
+    },
+    jackSpades: {
+        value: "",
+        image: "",
+    },
+    queenSpades: {
+        value: "",
+        image: "",
+    },
+    kingSpades: {
+        value: "",
+        image: "",
+    },
+
+};
+
+var images = {
+    aceHearts: "assets/images/Ace_Clubs.png",
+}
+
+
+
+
+
 
 
 $(".cardStacks").hide();
-
 console.log(cardDeck);
 
 var stackOne = [];
@@ -35,11 +248,8 @@ function shuffle() {
             cardDeck[randomIndex] = temporaryValue;
         }
     }
-    $("#gameStart").hide();
-    $(".cardStacks").show();
     console.log(cardDeck);
-    deal();
-}
+} // closes shuffle function
 
 function deal() {
     for (var i = 0; i <= 27; i++) {
@@ -55,7 +265,7 @@ function deal() {
             stackFive.push(cardDeck[i]);
         } else if (i === 5 || i === 11 || i === 16 || i === 20 || i === 23 || i === 25) {
             stackSix.push(cardDeck[i]);
-        } else if (i === 6 || i === 12 || i === 17 || i === 21 || i === 24 || i === 26 || i === 27 ) {
+        } else if (i === 6 || i === 12 || i === 17 || i === 21 || i === 24 || i === 26 || i === 27) {
             stackSeven.push(cardDeck[i]);
         }
     } // Closes tableu deal
@@ -63,14 +273,64 @@ function deal() {
     for (var i = 28; i <= 52; i++) {
         remainingCards.push(cardDeck[i]);
     }
-    console.log(stackOne);
-    console.log(stackTwo);
-    console.log(stackThree);
-    console.log(stackFour);
-    console.log(stackFive);
-    console.log(stackSix);
-    console.log(stackSeven);
-    console.log(remainingCards);
-}
+    console.log(stackOne); console.log(stackTwo); console.log(stackThree); console.log(stackFour); console.log(stackFive); console.log(stackSix); console.log(stackSeven); console.log(remainingCards);
+} // closes deal function
 
-$("#gameStart").on("click", shuffle);
+$("#gameStart").on("click", function () {
+    $("#gameStart").hide();
+    $(".cardStacks").show();
+    // for (var i = 0; i < cardDeck.length; i++) {
+    //     var card = cardDeck[i];
+    //     var image = $("<img>");
+    //     image.attr('data-name', card);
+
+    // $("#imageReference").append(image + " "+ i);
+    // $("#imageReference").append(card);
+    // $("#imageReference").append(image);
+    // cardDeck[i].attr('data-name', image);
+    // }
+    shuffle();
+    deal();
+});
+
+$("#deckRemainder").on("click", function () {
+
+}); $("#nextCard").on("click", function () {
+
+});
+// $("#diamoøndStack").on("click", function(){
+
+// });
+// $("#clubStack").on("click", function(){
+
+// });
+// $("#heartStack").on("click", function(){
+
+// });
+// $("#spadeStack").on("click", function(){
+
+// });
+$("#stackOne").on("click", function () {
+
+});
+$("#stackTwo").on("click", function () {
+
+});
+$("#stackThree").on("click", function () {
+
+});
+$("#stackFour").on("click", function () {
+
+});
+$("#stackFive").on("click", function () {
+
+});
+$("#stackSix").on("click", function () {
+
+});
+$("#stackSeven").on("click", function () {
+
+});
+
+
+
