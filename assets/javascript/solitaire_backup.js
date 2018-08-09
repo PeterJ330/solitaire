@@ -44,18 +44,15 @@ var cardProperties = {
 };
 
 var cardDeck = [];
-
-console.log(cardProperties.length);
-
 // Create Card Deck
-// function createDeck() {
-//     for (var i = 0; i < cardProperties.length; i++) {
+function createDeck() {
+    for (var i = 0; i < cardProperties.hearts.value.length; i++) {
+        cardDeck.push(cardProperties.hearts.value[i]);
+    }
 
-//     }
+};
 
-// };
-
-
+createDeck();
 $(".cardStacks").hide();
 console.log(cardDeck);
 

@@ -13,11 +13,11 @@ header {
 
 }
 
-#imageReference {
+/* #imageReference {
     border: solid thick black;
     width: 30px;
     height: 50px;
-}
+} */
 
 #nextCard {
     margin-left: -50px;
